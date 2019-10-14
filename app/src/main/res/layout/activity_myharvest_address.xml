@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_24"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_24"
+    android:paddingBottom="@dimen/dp_30"
+    tools:context=".ui.activity.MyharvestAddressActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="我的收获地址"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/tv_myHarvest_address_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="完成"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_12" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_myHarvest_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_myHarvest_address_complete"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_add_myHarvest_address"
+        android:layout_width="@dimen/dp_116"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ff5e70"
+        android:text="新增收获地址"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_12" />
+</RelativeLayout>

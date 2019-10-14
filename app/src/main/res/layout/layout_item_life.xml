@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_151"
+    android:layout_height="@dimen/dp_174"
+    android:background="@drawable/homepage_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/iv_life_pic"
+        android:layout_width="@dimen/dp_131"
+        android:layout_height="@dimen/dp_102"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/tv_life_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:singleLine="true"
+        android:text="荣耀小米小米小米xxxxxxxxxxxxxxwrgreg小米"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_life_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="￥1199.00"
+        android:textColor="#ff0000"
+        android:textSize="14sp" />
+</LinearLayout>

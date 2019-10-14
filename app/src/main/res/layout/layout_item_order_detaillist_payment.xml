@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_292"
+
+    android:layout_height="@dimen/dp_97"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/dp_10"
+    android:padding="@dimen/dp_10"
+    android:background="@drawable/list_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homepage_background">
+
+        <ImageView
+            android:id="@+id/iv_order_detail_payment_pic"
+            android:layout_width="@dimen/dp_81"
+            android:layout_height="@dimen/dp_81"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_order_detail_payment_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="3"
+                android:text="商品名喝豆腐司将法式咖啡静安寺规划杀戮法解释大家纷纷时代峻峰设计费垦利街道够你玩关键人物"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_detail_payment_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="￥520.00"
+                    android:textColor="#ff0606"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+                <com.baway.dimensionsofelectricity.ui.widget.CustomSubTractor
+                    android:id="@+id/order_detail_payment_subTractor"
+                    android:layout_width="@dimen/dp_101"
+                    android:layout_height="@dimen/dp_18" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

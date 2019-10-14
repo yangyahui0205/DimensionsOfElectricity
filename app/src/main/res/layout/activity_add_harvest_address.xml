@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_24"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_24"
+    android:paddingBottom="@dimen/dp_30"
+    tools:context=".ui.activity.AddHarvestAddressActivity">
+
+    <TextView
+        android:id="@+id/tv_add_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="新增收获地址"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_16" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_add_address"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/list_background"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收件人"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/et_add_address_realName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_35"
+                android:background="#fff"
+                android:hint="收件人"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_10"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/et_add_address_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:background="#fff"
+                android:hint="手机号码"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_10"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在地区"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/et_add_address_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:background="#fff"
+                android:hint="所在地区"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_10"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详细地址"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/et_add_address_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:background="#fff"
+                android:hint="详细地址"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_10"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮政编码"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+
+            <EditText
+                android:id="@+id/et_add_address_zipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:background="#fff"
+                android:hint="邮政编码"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="#f2f2f2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add_address_saveAndUse"
+        android:layout_width="@dimen/dp_116"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ff5e70"
+        android:text="保存并使用"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_14" />
+</RelativeLayout>

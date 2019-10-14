@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.EvaluateActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_evaluate_info"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_97"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/list_background">
+
+        <ImageView
+            android:id="@+id/iv_evaluate_detail_pic"
+            android:layout_width="@dimen/dp_81"
+            android:layout_height="@dimen/dp_81"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_evaluate_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="涉及到佛is近段时间公开了时间过来上课点击方式单联开关聚少离多看见了SDK"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_evaluate_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥0.00"
+                android:textColor="#ff0606"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_evaluate_content"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_97"
+        android:layout_below="@id/ll_evaluate_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#f2f2f2"
+        android:gravity="top"
+        android:hint="请在此写下你对商品的评价" />
+
+    <LinearLayout
+        android:id="@+id/ll_evaluate_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_evaluate_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_24">
+
+        <ImageView
+            android:id="@+id/iv_evaluate_detail_camera_one"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="#f2f2f2" />
+
+        <ImageView
+            android:id="@+id/iv_evaluate_detail_camera_two"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="#f2f2f2" />
+
+        <ImageView
+            android:id="@+id/iv_evaluate_detail_camera_three"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="#f2f2f2" />
+
+        <ImageView
+            android:id="@+id/iv_evaluate_detail_camera"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@mipmap/common_btn_camera_blue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_evaluate_camera"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_24"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cb_sync_to_circles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/commom_btn_check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="同步到圈子"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_evaluate_published"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:background="#ff5f71"
+        android:text="发表"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_14" />
+
+</RelativeLayout>

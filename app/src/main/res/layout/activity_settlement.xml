@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SettlementActivity">
+
+    <TextView
+        android:id="@+id/btn_settlement_add_address"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/list_background"
+        android:gravity="center"
+        android:text="暂无收获地址 ，点击添加"
+        android:textColor="#ff5f71"
+        android:textSize="@dimen/sp_12" />
+
+    <LinearLayout
+        android:id="@+id/ll_settlement_address_bar"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_98"
+        android:layout_below="@id/btn_settlement_add_address"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/list_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_20"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_settlement_address_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="李小二"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_settlement_address_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345678901"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_settlement_address_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="广东省 深圳市 福田区 黄岗街道办事处 黄冈商务中心55楼"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/tv_settlement_address_down"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_5"
+            android:src="@mipmap/common_btn_drop_down" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_settlement"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_settlement_address_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_settlement_totalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff0606"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共件商品，支付款"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_settlement_totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#ff0606"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="元"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_14" />
+
+
+        <Button
+            android:id="@+id/btn_submit_order"
+            android:layout_width="@dimen/dp_118"
+            android:layout_height="match_parent"
+            android:background="#ff5f71"
+            android:text="提交订单"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+</RelativeLayout>

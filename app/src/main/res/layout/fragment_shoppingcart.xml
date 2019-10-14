@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dp_59"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_allContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cb_checkAll"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:background="@drawable/commom_btn_check"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="全选"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计:"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_totalPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="￥0.00"
+            android:textColor="#ff0606"
+            android:textSize="@dimen/sp_16" />
+
+        <Button
+            android:id="@+id/btn_settlement"
+            android:layout_width="@dimen/dp_118"
+            android:layout_height="@dimen/dp_50"
+            android:background="#ff5f71"
+            android:text="去结算"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_shops"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_allContainer"
+        android:layout_margin="@dimen/dp_24" />
+</RelativeLayout>

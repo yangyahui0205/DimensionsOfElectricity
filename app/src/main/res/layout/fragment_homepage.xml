@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.baway.dimensionsofelectricity.ui.widget.HomePageSearchBox
+            android:id="@+id/homePage_searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.stx.xhb.xbanner.XBanner
+                    android:id="@+id/homePage_xBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_184"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#fff"
+                    android:paddingTop="@dimen/dp_20"
+                    app:AutoPlayTime="3000"
+                    app:clipChildrenLeftRightMargin="@dimen/dp_20"
+                    app:clipChildrenTopBottomMargin="@dimen/dp_7"
+                    app:isAutoPlay="true"
+                    app:isClipChildrenMode="true"
+                    app:isClipChildrenModeLessThree="true"
+                    app:pointsVisibility="false" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:paddingTop="@dimen/dp_30">
+
+                    <TextView
+                        android:id="@+id/tv_hotNewGoods"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/hot"
+                        android:gravity="center"
+                        android:text="热销新品"
+                        android:textColor="#ff7f57"
+                        android:textSize="@dimen/sp_16" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_24"
+                        android:src="@mipmap/common_btn_more_yellow" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_hotNewGoods"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_24"
+                        android:paddingBottom="@dimen/dp_20" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="#fff">
+
+                    <TextView
+                        android:id="@+id/tv_magicStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/style"
+                        android:gravity="center"
+                        android:text="魔力时尚"
+                        android:textColor="#3F51B5"
+                        android:textSize="@dimen/sp_16" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_24"
+                        android:src="@mipmap/home_btn_more_purple" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_magicStyle"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_24"
+                        android:paddingBottom="@dimen/dp_20" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_81"
+                    android:background="#fff">
+
+                    <TextView
+                        android:id="@+id/tv_quality_life"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@mipmap/life"
+                        android:gravity="center"
+                        android:text="品质生活"
+                        android:textColor="#F44336"
+                        android:textSize="@dimen/sp_16" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_24"
+                        android:src="@mipmap/home_btn_moer_pink_n_hdpi" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_life"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_quality_life"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_24"
+                        android:paddingBottom="@dimen/dp_20" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/sp_40"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36"
+            android:background="#4f4f4f"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="男装"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="女装"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="女鞋"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="T恤"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_20"
+                android:text="美妆护肤"
+                android:textColor="#fff"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机数码"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_92"
+            android:background="#5d5d5d"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/category_sweater"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:text="打底毛衣"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_12" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/category_pants"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:text="裤装"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_12" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/category_skirt"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:text="裙装"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_12" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/category_coat"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:text="外套"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_12" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/category_hoodie"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:text="卫衣"
+                android:textColor="#fff"
+                android:textSize="@dimen/dp_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

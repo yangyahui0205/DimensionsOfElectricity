@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50666666">
+
+    <ImageView
+        android:id="@+id/iv_payment_success"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_152"
+        android:src="@mipmap/payment_success" />
+
+    <TextView
+        android:id="@+id/tv_payment_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_payment_success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="支付成功"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_payment_success_home_back"
+        android:layout_width="@dimen/dp_108"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/tv_payment_success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_60"
+        android:background="#ff5e70"
+        android:text="返回主页"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:id="@+id/btn_payment_success_check_order"
+        android:layout_width="@dimen/dp_108"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/btn_payment_success_home_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/btn_payment_background"
+        android:text="查看订单"
+        android:textColor="#ff5f71"
+        android:textSize="@dimen/sp_14" />
+</RelativeLayout>
